@@ -43,4 +43,22 @@ public class DayOne {
         System.out.println(singleNumber(sample));
         System.out.println(singleNumber(sample2));
     }
+
+    // recommended solution
+
+    //by creating a list they check the list using an enhanced for loop and checking to see if there are repeating numbers
+    //if so then they just remove it from the list and then return index 0 which is the only number in that list
+
+    //public int singleNumber(int[] nums) {
+    //    List<Integer> no_duplicate_list = new ArrayList<>();
+    //
+    //    for (int i : nums) {
+    //      if (!no_duplicate_list.contains(i)) {
+    //        no_duplicate_list.add(i);
+    //      } else {
+    //        no_duplicate_list.remove(new Integer(i));
+    //      }
+    //    }
+    //    return no_duplicate_list.get(0);
+    //  }
 }
